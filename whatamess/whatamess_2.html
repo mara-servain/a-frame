@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <a-assets>
+
+      <img id= "texture" src="ciel_1.jpg">
+      <img id= "texture" src="night.jpg">
+      <a-asset-item id="Glowybuilding_glb" src="Glowybuilding.glb"></a-asset-item>
+      <a-asset-item id="Glowybuilding2_glb" src="Glowybuilding.glb"></a-asset-item>
+      <a-asset-item id="tree_glb" src="tree.glb"></a-asset-item>
+
+
+      </a-assets>
+      <a-entity gltf-model="#Glowybuilding_glb" scale="0.04 0.1 0.04"
+       position="0 0. 0"></a-entity>
+       <a-entity gltf-model="#Glowybuilding2_glb" scale="0.04 0.1 0.04" rotation="0 90 0"
+        position="0 0. 0"></a-entity>
+
+
+
+
+
+
+      <a-plane position="0 0 0" rotation="-90 0 0" width="3" height="3" color="black" ></a-plane>
+      <a-camera position= "0 0.1 0"> </a-camera>
+      <a-sky src="night.jpg"></a-sky>
+    </a-scene>
+  </body>
+</html>
