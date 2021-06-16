@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+    <a-scene ar>
+      <a-box position="-1 1.6 -3" scale="0.2 0.2 0.2" rotation="0 45 0" color="#4CC3D9"
+      animation="property: position; to: 1 2 -5; dur: 2000; delay: 1000; easing: easeInOutQuad; loop: true"
+      animation__rotation="property : rotation; to: 360 360 0;  loop: true; dur: 10000"
+      rotation="0 45 0"
+      color="#B76D68"></a-box>
+      <a-sphere position="0 1.6 -5" radius="0.25" color="#EF2D5E"
+      animation="property: position; to: 0 1.6 0; dur: 2000; delay: 1000; easing: easeInOutQuad; loop: true"
+      ></a-sphere>
+      <a-cylinder position="1 1.6 -3" radius="0.25" height="0.25" color="#FFC65D"
+                  animation="property: radius; to: 0.5 1.6 0.5; dur: 2000; delay: 1000; easing: easeInOutQuad; loop: true"></a-cylinder>
+
+
+    </a-scene>
+  </body>
+</html>
