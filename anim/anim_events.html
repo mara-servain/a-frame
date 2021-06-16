@@ -1,0 +1,35 @@
+<!-- https://github.com/supermedium/superframe/tree/master/components/event-set -->
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <a-assets>
+
+
+
+      </a-assets>
+
+      <a-box id="vert"
+            position="0 0.5 -3"
+            color="green"
+            event-set__click="material.color: red; scale: 2 2 2 "
+            event-set__mouseout="visible: true;"
+            ></a-box>
+
+      <a-box id="cyan"
+            position="1 1.6 -5"
+            color="cyan"
+            event-set__mouseenter="_target:#vert; visible: false; "
+            event-set__mouseleave="_target:#vert; visible: true"
+            ></a-box>
+
+
+      <a-sky color="#272838"></a-sky>
+      <a-camera><a-cursor></a-cursor></a-camera>
+    </a-scene>
+  </body>
+</html>
