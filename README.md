@@ -8,6 +8,8 @@
 
 [2-anim](https://mara-servain.github.io/a-frame/AR/2_anim.html)
 
+[3-loop](https://mara-servain.github.io/a-frame/AR/3_loop.html)
+
 ## VR
 ### labyrinthe
 ### volume2arch
